@@ -4,136 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Giftwrites | Technical & Science Writer</title>
+    <title>Giftwrites | Technical Writer, Poet & Graphic Designer</title>
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
-            color: #222;
             background: #f7f7f7;
+            color: #222;
         }
 
         header {
-            background: #111827;
+            background: #171717;
             color: white;
-            padding: 70px 20px;
             text-align: center;
+            padding: 70px 20px;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 48px;
             margin-bottom: 10px;
         }
 
         header p {
             font-size: 19px;
-            max-width: 700px;
-            margin: auto;
-            color: #d1d5db;
+            color: #ddd;
         }
 
         nav {
             background: white;
-            padding: 15px;
             text-align: center;
+            padding: 15px;
             position: sticky;
             top: 0;
-            border-bottom: 1px solid #ddd;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         nav a {
             color: #222;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 12px;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #7b2cbf;
+        }
+
         section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 60px 20px;
         }
 
-        h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            color: #111827;
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
         }
 
-        .hero-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 24px;
-            background: white;
-            color: #111827;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
+        .intro {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
         }
 
-        .card-container {
+        .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         .card h3 {
-            margin-bottom: 10px;
-            color: #111827;
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .samples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
         .sample {
             background: white;
             padding: 25px;
-            margin-bottom: 20px;
-            border-left: 4px solid #111827;
+            border-left: 5px solid #7b2cbf;
+            border-radius: 8px;
         }
 
-        .contact {
-            background: #111827;
-            color: white;
-            text-align: center;
-            max-width: none;
+        .sample h3 {
+            margin-bottom: 10px;
         }
 
-        .contact h2 {
-            color: white;
-        }
-
-        .contact a {
-            color: white;
+        .sample a {
+            color: #7b2cbf;
+            text-decoration: none;
             font-weight: bold;
         }
 
+        .contact {
+            text-align: center;
+            background: #171717;
+            color: white;
+            max-width: none;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #d8b4fe;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
         footer {
-            background: #0b1120;
+            background: #111;
             color: #aaa;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
+            font-size: 14px;
         }
 
         @media (max-width: 600px) {
             header h1 {
-                font-size: 34px;
+                font-size: 36px;
             }
 
             nav a {
                 display: inline-block;
-                margin: 5px;
+                margin: 5px 8px;
             }
         }
     </style>
@@ -141,166 +165,217 @@
 
 <body>
 
-<header>
-    <h1>Giftwrites ✍️</h1>
+    <!-- HEADER -->
+    <header>
+        <h1>Giftwrites ✍️</h1>
+        <p>Technical Writer | Poet | Graphic Designer</p>
+    </header>
 
-    <p>
-        Technical Writer | Science & Health Content Writer
-    </p>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">What I Do</a>
+        <a href="#samples">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <p>
-        I turn complex scientific, health and educational information
-        into clear, useful and accessible content.
-    </p>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
 
-    <a href="#work" class="hero-button">View My Work</a>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#work">Writing Samples</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-
-    <p>
-        I am a Biology Education graduate and writer with experience
-        across education, science communication, health education and
-        community-based health work.
-    </p>
-
-    <br>
-
-    <p>
-        My interest in technical writing grew from a simple question:
-        how can complex information be made easier for people to
-        understand and use?
-    </p>
-
-    <br>
-
-    <p>
-        I write with clarity, accuracy and the reader in mind,
-        particularly on scientific, health and educational topics.
-    </p>
-</section>
-
-<section id="services">
-    <h2>What I Write</h2>
-
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Technical Writing</h3>
-            <p>
-                Clear documentation, guides, procedures and
-                instructional content.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Science Writing</h3>
-            <p>
-                Accessible explanations of biology, health and
-                scientific concepts.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Health Content</h3>
-            <p>
-                Evidence-based health education and public health
-                communication.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Educational Content</h3>
-            <p>
-                Learning materials and educational content designed
-                for clear understanding.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section id="work">
-    <h2>Writing Samples</h2>
-
-    <div class="sample">
-        <h3>Science Communication</h3>
-        <p>
-            A sample explaining a complex biological or health concept
-            in simple language.
+        <p class="intro">
+            I am Gift Chioma Onyebuchi, a writer and creative professional
+            passionate about turning ideas into clear, meaningful and engaging
+            content.
         </p>
-    </div>
 
-    <div class="sample">
-        <h3>Technical Documentation</h3>
-        <p>
-            A sample user guide, how-to article, SOP or instructional
-            document.
+        <br>
+
+        <p class="intro">
+            My work combines technical and science writing with poetry and
+            visual design. I enjoy simplifying complex information, expressing
+            ideas through words, and creating visuals that communicate clearly.
         </p>
-    </div>
+    </section>
 
-    <div class="sample">
-        <h3>Health Education</h3>
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>What I Do</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>💻 Technical Writing</h3>
+
+                <p>
+                    I create clear and structured technical content that helps
+                    readers understand complex information.
+                </p>
+
+                <br>
+
+                <p>
+                    Areas include documentation, science communication,
+                    educational content, health content, guides and
+                    explanatory articles.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>✍️ Poetry & Creative Writing</h3>
+
+                <p>
+                    I write reflective poetry and creative pieces centred on
+                    growth, identity, life, emotions, resilience and everyday
+                    experiences.
+                </p>
+
+                <br>
+
+                <p>
+                    Writing under the name <strong>Giftwrites</strong>, I use
+                    simple words to explore meaningful ideas.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>🎨 Graphic Design</h3>
+
+                <p>
+                    I create simple and purposeful visual designs for writers,
+                    educators, businesses and personal brands.
+                </p>
+
+                <br>
+
+                <p>
+                    My design work includes social media graphics, flyers,
+                    book covers, educational materials and promotional
+                    visuals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section id="samples">
+
+        <h2>Selected Work</h2>
+
+        <div class="samples">
+
+            <div class="sample">
+                <h3>Technical Writing</h3>
+
+                <p>
+                    Science, health and educational articles written in a
+                    clear and accessible style.
+                </p>
+
+                <br>
+
+                <a href="#">View Writing Samples →</a>
+            </div>
+
+
+            <div class="sample">
+                <h3>Poetry & Creative Writing</h3>
+
+                <p>
+                    Reflective poems and creative pieces from Giftwrites.
+                </p>
+
+                <br>
+
+                <a href="#">Read My Writing →</a>
+            </div>
+
+
+            <div class="sample">
+                <h3>Graphic Design</h3>
+
+                <p>
+                    Selected graphics, educational designs, flyers and
+                    creative visual projects.
+                </p>
+
+                <br>
+
+                <a href="#">View Design Work →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section>
+
+        <h2>Education & Background</h2>
+
+        <div class="card">
+
+            <h3>B.Sc. (Ed.) Biology Education</h3>
+
+            <p>
+                Michael Okpara University of Agriculture, Umudike
+            </p>
+
+            <br>
+
+            <p>
+                My background in Biology Education supports my work in
+                science communication, health writing and educational content.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <h2>Let's Work Together</h2>
+
         <p>
-            A sample public health article focused on prevention,
-            health literacy or community health.
+            Have a writing, design or content project?
         </p>
-    </div>
-</section>
 
-<section>
-    <h2>Education & Experience</h2>
+        <p>
+            Email:
+            <a href="mailto:rosegift3@gmail.com">
+                rosegift3@gmail.com
+            </a>
+        </p>
 
-    <p>
-        <strong>B.Sc. (Ed.) Biology Education</strong><br>
-        Michael Okpara University of Agriculture, Umudike
-    </p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/" target="_blank">
+                Gift Chioma Onyebuchi
+            </a>
+        </p>
 
-    <br>
+    </section>
 
-    <p>
-        My experience includes teaching Biology, supporting research
-        projects, health education, community outreach and science
-        communication.
-    </p>
-</section>
 
-<section id="contact" class="contact">
-    <h2>Let's Work Together</h2>
+    <!-- FOOTER -->
+    <footer>
 
-    <p>
-        If you need clear, research-informed writing on technical,
-        scientific, health or educational topics, I'd love to hear
-        from you.
-    </p>
+        <p>
+            © 2026 Giftwrites ✍️. All rights reserved.
+        </p>
 
-    <br>
+        <p>
+            Technical Writing • Poetry • Graphic Design
+        </p>
 
-    <p>
-        Email:
-        <a href="mailto:rosegift3@gmail.com">
-            
-        </a>
-    </p>
-
-    <br>
-
-    <p>
-        LinkedIn:https://www.linkedin.com/in/gift-chioma-onyebuchi-092757193?utm
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 Giftwrites ✍️. All rights reserved.</p>
-</footer>
+    </footer>
 
 </body>
 </html>
